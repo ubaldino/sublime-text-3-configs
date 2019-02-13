@@ -1,0 +1,198 @@
+{
+    "scope": "source.js"
+  , "completions":[
+        {
+            "trigger": "promise"
+          , "contents": "new Promise((resolve,reject)=>{\n\t${1:}\n})"
+        }
+      , {
+            "trigger": "fs-require"
+          , "contents": "fs=require('fs')"
+        }
+      , {
+            "trigger": "join-require"
+          , "contents": "join=require('path').join"
+        }
+      , {
+            "trigger": "spawn-require"
+          , "contents": "spawn=require('child_process').spawn"
+        }
+      , {
+            "trigger": "try"
+          , "contents": "try{\n\t${1:}\n}\ncatch(e){}"
+        }
+      ,
+        {
+            "trigger": "then-promise"
+          , "contents": "then(()=>new Promise((resolve,reject)=>{\n\t${1:}\n}))"
+        }
+      , {
+            "trigger": "test-file"
+          , "contents": "require('fs').writeFile('test.json',JSON.stringify(${1:args},null,4),()=>{})"
+        }
+      , {
+            "trigger": "function"
+          , "contents": "const ${1:function}=()=>{\n\t\n}"
+        }
+      , {
+            "trigger": "resolve"
+          , "contents": "resolve(args)"
+        }
+      , {
+            "trigger": "reject"
+          , "contents": "reject(err)"
+        }
+      , {
+            "trigger": "catch-promise"
+          , "contents": "catch(reject)"
+        }
+      , {
+            "trigger": "catch"
+          , "contents": "catch(e){\n\t${1:}\n}"
+        }
+      , {
+            "trigger": "module.exports"
+          , "contents": "module.exports=self.main"
+        }
+      , {
+            "trigger": "self-module"
+          , "contents": "const self={\n\tmain:(args)=>${1:\\{\\}}\n}\n\nmodule.exports=self.main\n"
+        }
+      , {
+            "trigger": "if"
+          , "contents": "if(){}"
+        }
+      , {
+            "trigger": "if-else-short"
+          , "contents": "(${1:})?${1:}:null\n"
+        }
+      , {
+            "trigger": "if-else"
+          , "contents": "if(){\n\t${1:}\n}\nelse{\n\t\n}\n"
+        }
+      , {
+            "trigger": "map"
+          , "contents": "map(e=>{${1:}})\n"
+        }
+      , {
+            "trigger": "reduce"
+          , "contents": "reduce((p,c)=>{${1:}})\n"
+        }
+      , {
+            "trigger": "filter"
+          , "contents": "filter(e=>${1:\\{\\}})\n"
+        }
+      , {
+            "trigger": "length"
+          , "contents": "length"
+        }
+      , {
+            "trigger": "do-while"
+          , "contents": "do{\n\t\n}\nwhile(${1:})\n"
+        }
+      , {
+            "trigger": "JSON.parse"
+          , "contents": "JSON.parse(${1:})"
+        }
+      , {
+            "trigger": "JSON.stringify"
+          , "contents": "JSON.stringify(${1:args},null,4)"
+        }
+      , {
+            "trigger": "log"
+          , "contents": "console.log(${1:})\n"
+        }
+      , {
+            "trigger": "parseFloat"
+          , "contents": "parseFloat(${1:})"
+        }
+      , {
+            "trigger": "parseInt"
+          , "contents": "parseInt(${1:})"
+        }
+        /* STRINGS */
+      , {
+            "trigger": "indexOf"
+          , "contents": "indexOf('${1:}')"
+        }
+      , {
+            "trigger": "lastIndexOf"
+          , "contents": "lastIndexOf('${1:}')"
+        }
+      , {
+            "trigger": "replace"
+          , "contents": "replace('${1:}','${2:}')"
+        }
+      , {
+            "trigger": "toUpperCase"
+          , "contents": "toUpperCase()"
+        }
+      , {
+            "trigger": "toLowerCase"
+          , "contents": "toLowerCase()"
+        }
+      , {
+            "trigger": "concat"
+          , "contents": "concat('${1:}','${2:}')"
+        }
+      , {
+            "trigger": "charAt"
+          , "contents": "charAt(${1:})"
+        }
+      , {
+            "trigger": "charCodeAt"
+          , "contents": "charCodeAt(${1:})"
+        }
+      , {
+            "trigger": "split"
+          , "contents": "split('${1:}')"
+        }
+      , {
+            "trigger": "toString"
+          , "contents": "toString()"
+        }
+      , {
+            "trigger": "string-multiline"
+          , "contents": "`${1:\\${var\\}}`"
+        }
+
+        /* ARRAYS */
+      , {
+            "trigger": ".slice"
+          , "contents": ".slice(${1:},${2:})"
+        }
+      , {
+            "trigger": ".concat"
+          , "contents": ".concat(${1:},${2:})"
+        }
+      , {
+            "trigger": ".join"
+          , "contents": ".join('${1:}')"
+        }
+      , {
+            "trigger": ".pop"
+          , "contents": ".pop()"
+        }
+      , {
+            "trigger": ".push"
+          , "contents": ".push(${1:})"
+        }
+      , {
+            "trigger": ".shift"
+          , "contents": ".shift()"
+        }
+      , {
+            "trigger": ".unshift"
+          , "contents": ".unshift(${1:})"
+        }
+      , {
+            "trigger": ".sort"
+          , "contents": ".sort()"
+        }
+      , {
+            "trigger": ".reverse"
+          , "contents": ".reverse()"
+        }
+
+    ]
+}
